@@ -1,0 +1,10 @@
+add_executable(
+    <CVRA-TARGET>
+    <CVRA-TARGET-FILES>
+)
+
+target_link_libraries(
+    <CVRA-TARGET>
+    <CVRA-TARGET-LINKLIBS>
+)
+

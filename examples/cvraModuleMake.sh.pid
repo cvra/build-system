@@ -1,0 +1,40 @@
+module_name=pid
+module_version=`git rev-parse --short=8 HEAD`
+
+depends_on=(
+    platform-abstraction
+)
+
+includes=()
+
+linkpaths=()
+
+configs=(
+    tests
+    embedded
+    x86
+)
+
+embedded=(
+    pid.c
+)
+
+embedded_linklibs=()
+
+x86=(
+    pid.c
+)
+
+x86_linklibs=()
+
+tests=(
+    ${x86[@]}
+    tests/main.cpp
+    tests/pid_test.cpp  
+    pid.c
+)
+
+tests_linklibs=(
+    CppUTest
+    CppUTestExt
+)

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+project=pid
+
+modules=(
+    pid
+)
+
+build_configs=(
+    tests
+)
+
+build_dir=../build
+
+# DO NOT EDIT BELOW THIS LINE
+if [[ ! -d "../build-system/" ]]; then
+    pushd .. > /dev/null
+    git clone https://github.com/cvra/build-system
+    popd > /dev/null
+else
+    pushd ../build-system > /dev/null
+    git pull
+    popd > /dev/null
+fi
+
+cd ../build-system/ ;
+
+echo "Configuration finished - starting serious stuff"
+
+source ./cvraMake.sh
