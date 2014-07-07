@@ -16,7 +16,8 @@ For a demo of the system, feel free to checkout:
 https://github.com/pierluca/build-system-demo
 
 The build system is organized as such:
-```build-system/
+```
+build-system/
 |-- cvraMake.sh
 |-- cvraMake_utils.sh
 |-- cvraMake_utils_test.sh
